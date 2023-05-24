@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Red Rose", cursive;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url("pexels-maxyne-barcel-10402282\ 1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+  }
+  
+  .logo {
+    display: inline-block;
+    position: absolute;
+    left: 45px;
+    top: 40px;
+  }
+  
+  .logo img {
+    width: 7rem;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #ffc133;
+    font-size: larger;
+  }
+  
+  .nav-menu {
+    display: flex;
+    gap: 75px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  nav {
+    overflow: hidden;
+  }
+  
+  .navbar {
+    margin-top: 45px;
+  }
+  
+  #sml-btn {
+    font-size: 15px;
+    font-weight: bolder;
+    color: white;
+    background-color: #ff515f;
+    right: 55px;
+    top: 39px;
+    position: absolute;
+    padding: 7px 40px;
+    border: 2px solid #ff515f;
+  }
+  
+  a:hover {
+    color: orange;
+    text-decoration: underline;
+  }
+  
+  .hamburger {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    top: 42px;
+    overflow: hidden;
+  }
+  
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease;
+    background-color: white;
+    overflow: hidden;
+  }
+  
+  /* hamburger bar */
+  @media (max-width: 1024px) {
+    body {
+      background-image: none;
+      background-color: #0e0808;
+    }
+  
+    .hamburger {
+      display: block;
+    }
+  
+    .hamburger.active .bar:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .hamburger.active .bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+  
+    .hamburger.active .bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+  
+    .nav-menu {
+      position: fixed;
+      left: -100%;
+      top: 80px;
+      gap: 0;
+      flex-direction: column;
+      background-color: #0e0808;
+      width: 100%;
+      text-align: center;
+      transition: 0.8s;
+      z-index: 1;
+    }
+  
+    .nav-item {
+      margin: 16px 0;
+    }
+  
+    .nav-menu.active {
+      left: 0;
+    }
+  
+    .logo {
+      visibility: visible;
+      position: absolute;
+      left: 15px;
+    }
+  
+    #sml-btn {
+      display: block;
+      margin: 2px 30px auto auto;
+    }
+  }
+  
+  #sml-btn:hover {
+    border: 3px solid #ff515f;
+    cursor: pointer;
+  }
+  
+  @media (min-width: 12px) and (max-width: 350px) {
+    #sml-btn {
+      display: none;
+    }
+  }
+  
+  #hero {
+    text-align: center;
+    position: relative;
+    top: 5rem;
+    color: #ffc133;
+    font-size: 40px;
+    overflow: hidden;
+  }
+  
+  #btn-btn {
+    font-weight: bolder;
+    color: white;
+    background-color: #ff515f;
+    position: relative;
+    padding: 15px 40px 15px;
+    border: 2px solid #ff515f;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  #btn-btn:hover {
+    border: 3px solid #ff515f;
+    cursor: pointer;
+  }
+  
+  /* .lst-logo{
+      display: flex;
+      position: absolute;
+      bottom: 20px;
+      right: 40px;
+     }
+  
+  .lst-logo img{
+      position: absolute;
+      bottom: 20px;
+      right: 40px;
+      } */
+  
+  @media (min-width: 1024px) {
+    #images {
+      display: none;
+    }
+  }
+  
+  #images {
+    display: block;
+    justify-content: space-between;
+    position: absolute;
+    margin-top: 20rem;
+    text-align: center;
+    max-width: 100%;
+  }
+  
+  .sml-btn {
+    font-size: 15px;
+    font-weight: bolder;
+    color: white;
+    background-color: #ff515f;
+    right: 5rem;
+    margin-top: 20px;
+  
+    position: absolute;
+    padding: 7px 40px;
+    border: 2px solid #ff515f;
+  }
+  
+  .img-item {
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 300px;
+    border-radius: 25px;
+    border: 4px solid white;
+    /* width: 600px; */
+    height: auto;
+    max-width: 100%;
+    position: relative;
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  @media (min-width: 1024px) {
+    #images {
+      display: none;
+    }
+  }
+  
+  @media (min-width: 200px) {
+    .lst-logo {
+      display: flex;
+      padding: 30px 30px;
+    }
+  
+    .lst-logo img {
+      display: flex;
+      position: absolute;
+      right: 38%;
+      width: 7rem;
+      margin-top: 22%;
+  
+      /* margin-bottom: 0px; */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .lst-logo {
+      display: flex;
+      position: absolute;
+      bottom: 20px;
+      right: 35px;
+    }
+  
+    .lst-logo img {
+      position: absolute;
+      bottom: 20px;
+      right: 35px;
+    }
+  }
+  

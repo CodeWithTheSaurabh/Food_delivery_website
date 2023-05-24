@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>food-delivery-Website</title>
+    <!-- Import Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Red+Rose:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet" />
+    <!-- Link Css -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="white-logo.png" alt="">
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#images" class="nav-link">Our-Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Map</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contact</a>
+                    </li>
+                    <!-- btn-in-Right -->
+
+
+                </ul>
+
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+
+
+                </div>
+            </nav>
+            <li>
+                <button id="sml-btn">
+                    Order
+                </button>
+            </li>
+
+        </div>
+    </header>
+
+
+    <!-- hero section -->
+
+
+    <section id="hero">
+        <h1>A Restaurant That</h1>
+        <h1>Only Serves</h1>
+        <h1>Delicious Food</h1>
+
+        <button id="btn-btn">Read Our Menu</button>
+    </section>
+
+
+    <!-- Footer-Logo -->
+<center>
+
+    <div class="lst-logo">
+        <img src="scrool.png" alt="check-connection" class="src-lg">
+    </div>
+    
+</center>
+
+    <!-- main section -->
+
+    <main>
+        <div id="images">
+            <div>
+
+
+                <img src="https://c.ndtvimg.com/2021-04/umk8i7ko_pasta_625x300_01_April_21.jpg?im=FaceCrop,algorithm=dnn,width=1200,height=886"
+                    alt="check-connection" class="img-item">
+                <button class="sml-btn">Order Now 250₹</button>
+
+            </div>
+
+            <div>
+
+                </img>
+                <img src="https://images.squarespace-cdn.com/content/v1/57879a6cbebafb879f256735/1667226425853-GFTZP1P5PWAME97VPC6M/AD011219-21_original.jpg"
+                    alt="check-connection" class="img-item">
+                <button class="sml-btn">Order Now 150₹</button>
+                </img>
+            </div>
+
+            <div>
+
+                <img src="https://media.photographycourse.net/wp-content/uploads/2022/04/08152906/food-photographer-ideas.jpg"
+                    alt="check-connection" class="img-item">
+                <button class="sml-btn">Order Now 300₹</button>
+                </img>
+
+            </div>
+            <div>
+
+                <img src="https://images.indianexpress.com/2022/07/diet-food_200_getty.jpg" alt="check-connection"
+                    class="img-item">
+                <button class="sml-btn">Order Now 100₹</button>
+                </img>
+            </div>
+
+
+            <div>
+
+                <img src="https://www.thespruceeats.com/thmb/UnVh_-znw7ikMUciZIx5sNqBtTU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/steamed-momos-wontons-1957616-hero-01-1c59e22bad0347daa8f0dfe12894bc3c.jpg"
+                    alt="check-connection" class="img-item">
+                <button class="sml-btn">Order Now 199₹</button>
+                </img>
+
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Javascript -->
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        })
+
+        document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+        }))
+    </script>
+</body>
+
+</html>
